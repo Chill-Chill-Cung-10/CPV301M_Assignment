@@ -1,34 +1,8 @@
 import gradio as gr
-import numpy as np
-import cv2
-import time
+from pipeline import list_pipeline_names, run_selected_pipeline
 
-def process_pipeline(img):
-    logs = ""
-    diagrams = []
-
-    if img is None:
-        return "No image captured from camera!", None, []
-
-    logs += "Step 1: Convert to grayscale...\n"
-
-    # Gradio trả ảnh dạng RGB
-    gray = cv2.cvtColor(img, cv2.COLOR_RGB2GRAY)
-
-    diagrams.append(gray)
-    time.sleep(0.5)
-
-    logs += "Step 2: Detect edges...\n"
-    edges = cv2.Canny(gray, 100, 200)
-    diagrams.append(edges)
-    time.sleep(0.5)
-
-    logs += "Step 3: Dilate edges...\n"
-    kernel = np.ones((3,3), np.uint8)
-    dilated = cv2.dilate(edges, kernel)
-    diagrams.append(dilated)
-
-    return logs, dilated, diagrams
+def process_pipeline(pipeline_name, img):
+    return run_selected_pipeline(pipeline_name, img)
 
 
 with gr.Blocks() as demo:
@@ -37,6 +11,11 @@ with gr.Blocks() as demo:
 
         # ===== INPUT AREA =====
         with gr.Column(scale=1):
+            pipeline_selector = gr.Dropdown(
+                choices=list_pipeline_names(),
+                value=list_pipeline_names()[1],
+                label="Select Pipeline",
+            )
 
             camera = gr.Image(
                 sources="webcam",
@@ -63,7 +42,7 @@ with gr.Blocks() as demo:
 
     capture_btn.click(
         fn=process_pipeline,
-        inputs=camera,
+        inputs=[pipeline_selector, camera],
         outputs=[console, result_img, pipeline_gallery]
     )
 
