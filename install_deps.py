@@ -41,3 +41,4 @@ if __name__ == "__main__":
     except subprocess.CalledProcessError as e:
         print(f"\n✗ Installation failed: {e}", file=sys.stderr)
         sys.exit(1)
+

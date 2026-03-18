@@ -332,3 +332,4 @@ def cosine_similarity_matrix(query, gallery):
     query_norm = np.linalg.norm(query) + 1e-8
     gallery_norms = np.linalg.norm(gallery, axis=1) + 1e-8
     return (gallery @ query) / (gallery_norms * query_norm)
+
