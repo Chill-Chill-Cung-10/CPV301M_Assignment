@@ -1,0 +1,46 @@
+Processed 200 input images | wrote 2400 outputs | failed 0
+Processed 400 input images | wrote 4800 outputs | failed 0
+Processed 600 input images | wrote 7200 outputs | failed 0
+Processed 800 input images | wrote 9600 outputs | failed 0
+Processed 1000 input images | wrote 12000 outputs | failed 0
+Processed 1200 input images | wrote 14400 outputs | failed 0
+Processed 1400 input images | wrote 16800 outputs | failed 0
+Processed 1600 input images | wrote 19200 outputs | failed 0
+Processed 1800 input images | wrote 21600 outputs | failed 0
+Processed 2000 input images | wrote 24000 outputs | failed 0
+Processed 2200 input images | wrote 26400 outputs | failed 0
+Processed 2400 input images | wrote 28800 outputs | failed 0
+Processed 2600 input images | wrote 31200 outputs | failed 0
+Processed 2800 input images | wrote 33600 outputs | failed 0
+Processed 3000 input images | wrote 36000 outputs | failed 0
+Processed 3200 input images | wrote 38400 outputs | failed 0
+Processed 3400 input images | wrote 40800 outputs | failed 0
+Processed 3600 input images | wrote 43200 outputs | failed 0
+Processed 3800 input images | wrote 45600 outputs | failed 0
+Processed 4000 input images | wrote 48000 outputs | failed 0
+Processed 4200 input images | wrote 50400 outputs | failed 0
+Processed 4400 input images | wrote 52800 outputs | failed 0
+Processed 4600 input images | wrote 55200 outputs | failed 0
+Processed 4800 input images | wrote 57600 outputs | failed 0
+Processed 5000 input images | wrote 60000 outputs | failed 0
+Processed 5200 input images | wrote 62400 outputs | failed 0
+Processed 5400 input images | wrote 64800 outputs | failed 0
+Processed 5600 input images | wrote 67200 outputs | failed 0
+Processed 5800 input images | wrote 69600 outputs | failed 0
+Processed 6000 input images | wrote 72000 outputs | failed 0
+Processed 6200 input images | wrote 74400 outputs | failed 0
+Processed 6400 input images | wrote 76800 outputs | failed 0
+Processed 6600 input images | wrote 79200 outputs | failed 0
+Processed 6800 input images | wrote 81600 outputs | failed 0
+Processed 7000 input images | wrote 84000 outputs | failed 0
+Processed 7200 input images | wrote 86400 outputs | failed 0
+Processed 7400 input images | wrote 88800 outputs | failed 0
+Processed 7600 input images | wrote 91200 outputs | failed 0
+Processed 7800 input images | wrote 93600 outputs | failed 0
+Processed 8000 input images | wrote 96000 outputs | failed 0
+Processed 8200 input images | wrote 98400 outputs | failed 0
+Processed 8400 input images | wrote 100800 outputs | failed 0
+Done
+Input images: 8557
+Output images: 102684
+Failures: 0
