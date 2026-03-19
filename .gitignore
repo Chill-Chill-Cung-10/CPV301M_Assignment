@@ -1,3 +1,12 @@
 ./datasource/
 datasource/
-knowledge/
+*.code-workspace
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.vscode/
+datasource_v2/
+
+arcfaceresnet100-8.onnx
+
